@@ -1,0 +1,6 @@
+<section class="col-xs-12 no-padding">
+  <h2>{{title}}</h2>
+  <div class="" *ngFor="let dish of dishes | categoryPipe: categoryValue ">
+    <dish [name]="dish.name" [price]="dish.price" [description]="dish.description"></dish>
+  </div>
+</section>
